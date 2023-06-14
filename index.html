@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>House Price Prediction</h1>
+    <div class="container">
+        <form action="/predict" method="POST">
+            <label for="lot_area">Lot Area:</label>
+            <input type="text" id="lot_area" name="lot_area"><br><br>
+            <label for="mas_vnr_area">Masonry Veneer Area:</label>
+            <input type="text" id="mas_vnr_area" name="mas_vnr_area"><br><br>
+            <label for="bsmt_unf_sf">Basement Unfinished Area:</label>
+            <input type="text" id="bsmt_unf_sf" name="bsmt_unf_sf"><br><br>
+            <label for="total_bsmt_sf">Total Basement Area:</label>
+            <input type="text" id="total_bsmt_sf" name="total_bsmt_sf"><br><br>
+            <label for="first_flr_sf">First Floor Area:</label>
+            <input type="text" id="first_flr_sf" name="first_flr_sf"><br><br>
+            <label for="second_flr_sf">Second Floor Area:</label>
+            <input type="text" id="second_flr_sf" name="second_flr_sf"><br><br>
+            <label for="grliv_area">Above Ground Living Area:</label>
+            <input type="text" id="grliv_area" name="grliv_area"><br><br>
+            <label for="garage_area">Garage Area:</label>
+            <input type="text" id="garage_area" name="garage_area"><br><br>
+            <label for="year_built">Year Built:</label>
+            <input type="text" id="year_built" name="year_built"><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
