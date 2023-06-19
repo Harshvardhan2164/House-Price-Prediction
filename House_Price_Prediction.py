@@ -24,10 +24,6 @@ from sklearn.linear_model import BayesianRidge # Bayesian algorithm
     It has a probabilistic character, it can produce more accurate estimates for regression parameters.
 '''
 
-from sklearn.linear_model import ElasticNet # ElasticNet algorithm
-''' It uses the penalties from both Lasso and Ridge models to regularize regression models.
-'''
-
 from sklearn.metrics import explained_variance_score as evs # evaluation metric
 from sklearn.metrics import r2_score as r2 # evaluation metric
 # from sklearn.externals import joblib
