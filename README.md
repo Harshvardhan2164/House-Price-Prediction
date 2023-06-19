@@ -16,9 +16,9 @@ The script follows the following steps:
 
 5. **Feature Selection & Data Split**: Selecting the independent variables (features) and the dependent variable (target) for the prediction model. Splitting the data into training and testing sets.
 
-6. **Modeling**: Building and training five different types of linear regression models, including Ordinary Least Squares (OLS), Ridge regression, Lasso regression, Bayesian regression, and ElasticNet regression. Making predictions on the testing data for each model.
+6. **Modeling**: Building and training four different types of linear regression models, including Ordinary Least Squares (OLS), Ridge regression, Lasso regression and Bayesian regression. Making predictions on the testing data for each model.
 
-7. **Evaluation**: Comparing the performance of each model by calculating the Mean Squared Error (MSE) and visualizing the results using a bar plot.
+7. **Evaluation**: Comparing the performance of each model by calculating the R-Squared Error, Explained Variance Score and visualizing the results using a bar plot.
 
 8. **SalePrice Prediction Visualization**: Visualizing the predicted sale prices compared to the actual prices for both the training and testing datasets using scatter plots.
 
@@ -37,7 +37,7 @@ pip install -r requirements.txt
 
 5. Open the `house_price_prediction.py` script and update the following line with your CSV file's name:
 '''python
-  df = pd.read_csv('your_data.csv')'''
+  df = pd.read_csv('house[1].csv')'''
 
 6. Run the script:
 python house_price_prediction.py
