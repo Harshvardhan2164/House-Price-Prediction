@@ -34,7 +34,7 @@ plt.rcParams['figure.figsize'] = (20, 10) # plot size
 
 # IMPORTING DATA
 
-df = pd.read_csv('house[1].csv') # Read the housing data from CSV file
+df = pd.read_csv('House_data.csv') # Read the housing data from CSV file
 df.set_index('Id', inplace = True) # Sets the 'ID' column as the index
 
 print(df.head(5)) # Prints first 5 rows of the dataset
@@ -71,7 +71,7 @@ plt.show() # Displays the heatmap plot
 '''
 
 def scatter_df(y_var):
-    # scatter_df = df.drop(y_var, axis = 1)
+    scatter_df = df.drop(y_var, axis = 1)
     i = df.columns
     
     plot1 = sb.scatterplot(x = i[0], 
@@ -276,13 +276,6 @@ lasso_pred = lasso.predict(X_test) # Make predictions on the testing data
 bayesian = BayesianRidge() # Create an instance of the BayesianRidge model
 bayesian.fit(X_train, y_train) # Train the model on training data
 bayesian_pred = bayesian.predict(X_test) # Make predictions on the testing data
-
-# Save models using joblib
-# joblib.dump(ols, 'ols_model.joblib')
-# joblib.dump(ridge, 'ridge_model.joblib')
-# joblib.dump(lasso, 'lasso_model.joblib')
-# joblib.dump(bayesian, 'bayesian_model.joblib')
-
 
 # PLOTTING THE SALEPRICE PREDICTION FROM TRAIN AND TEST DATASET
 
